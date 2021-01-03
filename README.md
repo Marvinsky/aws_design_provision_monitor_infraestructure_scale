@@ -94,6 +94,7 @@ The reason why cloudWatch log display insufficient data is because for the set p
 
 ![Cost Monitoring Billing](resources/screenshots/CloudWatch_alarm_2.png "Cost Monitoring Billing")
 
+<h2>Task 5:</h2>
 
 ### Exercise 1
 
