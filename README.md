@@ -90,14 +90,14 @@ User Account created
 
 ![Cost Monitoring](resources/screenshots/CloudWatch_alarm.png "Cost Monitoring")
 
-The reason why cloudWatch log not being active yet is four the period set no logs being recieved. Look the billing:
+The reason why cloudWatch log display insufficient data is because for the set period no logs have been received. Look at the billing:
 
 ![Cost Monitoring Billing](resources/screenshots/CloudWatch_alarm_2.png "Cost Monitoring Billing")
 
 
 ### Exercise 1
 
-1. Download the [starter code](https://github.com/udacity/cand-c2-project).
+1. Review the directories Exercise_1 and Excersive_"
 2. In the main.tf file write the code to provision
    * AWS as the cloud provider
    * Use an existing VPC ID
