@@ -88,7 +88,12 @@ User Account created
 
 <h2>Task 4: Set up Cost Monitoring</h2>
 
-![Cost Monitoring](resources/screenshots/udacity_password_policy.jpg "Cost Monitoring")
+![Cost Monitoring](resources/screenshots/CloudWatch_alarm.png "Cost Monitoring")
+
+The reason why cloudWatch log not being active yet is four the period set no logs being recieved. Look the billing:
+
+![Cost Monitoring Billing](resources/screenshots/CloudWatch_alarm_2.png "Cost Monitoring Billing")
+
 
 ### Exercise 1
 
@@ -121,6 +126,23 @@ User Account created
    * A variables.tf file with an AWS region
   
 2. Take a screenshot of the EC2 instances page
+
+![Terraform destroying](resources/screenshots/Terraform_2_1.png "Terraform destroying")
+
 3. Take a screenshot of the VPC page 
 
 
+![VPC info](resources/screenshots/Terraform_2_2.png "VPC info")
+
+4. CloudWatch log entry
+
+![CloudWatchLog Entry](resources/screenshots/Terraform_2_3.png "CloudWatchLog Entry")
+
+<h2>Task 6: Destroy infraestructure using terraform.</h2>
+
+![Terraform destroying](resources/screenshots/Terraform_destroyed.png "Terraform destroying")
+
+
+Making sure about destroying EC2 instances.
+
+![Terraform destroying](resources/screenshots/Terraform_destroyed_2.png "Terraform destroying")
