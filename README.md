@@ -59,15 +59,28 @@ The task carried out for this project should be carried out by a user logged in 
 <h4>How I come up with an estimated cost of $20,000?</h4>
 
 <ul>
-    <li>Add more instances (Scale out) and load balancer. <b>Reason</b>: Provide high availability for the application. Even if Northern Virginia region is completely down, application will be up and running in Oregon Region.</li>
+    <li>Add more instances ec2 (Scale out) and load balancer. <b>Reason</b>: Provide high availability for the application. Even if Northern Virginia region is completely down, application will be up and running in Oregon Region. In addition, increase instance type capacities.</li>
     <li>Add RDS database instance in Oregon Region. <b>Reason</b>: In order to reduce latency for end users accessing the application in other region. Read Replica can be in Oregon region.</li>
     <li>Add resources to RDS (Scale up) to database instance. <b>Reason</b>: Improve database performance and would be useful in case of huge traffic on application.</li>
 </ul>
 
-
+[`Increased_Cost_Estimate.csv`](resources/Increased_Cost_Estimate.csv) 
 </ul>
 </li>
-<li>fgdfgf</li>
 </ol>
 
+<h2>Task 3: Configure Permissions</h2>
 
+In order to complete this task, please ensure your IAM have been granted access to the billing dashboard
+
+Main Account
+
+![Main Account](resources/screenshots/udacity_password_policy.jpg "Main Account")
+
+User Account created
+
+![User Account](resources/screenshots/udacity_password_policy.png "User Account")
+
+<h2>Task 3: CloudTrail Information</h2>
+
+[`UdacityCloudTrailLog.csv`](resources/UdacityCloudTrailLog.csv) 
