@@ -84,3 +84,9 @@ User Account created
 <h2>Task 3: CloudTrail Information</h2>
 
 [`UdacityCloudTrailLog.csv`](resources/UdacityCloudTrailLog.csv) 
+
+
+<h2>Task 4: Set up Cost Monitoring</h2>
+
+
+
