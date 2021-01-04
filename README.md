@@ -45,11 +45,8 @@ The task carried out for this project should be carried out by a user logged in 
     <li>Your budget has been reduced from $8,000-$10,000 to a maximum of $6500. What services will you modify to meet this new budget?</li>
 
 <h4>How I reduced the estimate to $6,500?</h4>
-<ul>
-    <li>Change the instance type for ec2 from t2.xlarge to t2.large ($1,378.88 -> $701.44). <h2><b>Reasons:</b></h2> The performance can be reduced due to small resources. However, we still can scale if we want to.</li>
-    <li>Change model pricing from on-demand to reserved instances.<h2><b>Reasons:</b></h2> Reserving instances for 1 year will reduce cost for the architecture. However, we lock the application platform to use the same infraestructure for one year. Nevertheless, more resources can be added due to elasticity.</li>
-    <li>Scale down RDS instance from: db.m5.4xlarge to db.m5.2xlarge. <h2><b>Reasons:</b></h2> We will have performance issues in the database because reducing the computational capacity. But, it can be bearable.
-</ul>
+
+[`rational.txt`](resources/estimated_decreased.txt) 
 
 [`Reduced_Cost_Estimate.csv`](resources/Reduced_Cost_Estimate.csv) 
 
@@ -58,12 +55,7 @@ The task carried out for this project should be carried out by a user logged in 
 
 <h4>How I come up with an estimated cost of $20,000?</h4>
 
-<ul>
-    <li>Add more instances ec2 (Scale out) and load balancer. <h2><b>Reasons:</b></h2> Provide high availability for the application due to more computational capacity when changing for larger instance type. Even if Northern Virginia region is completely down, application will be up and running in Oregon Region.</li>
-    <li>Add RDS database instances in Oregon Region.
-    <h2><b>Reasons:</b></h2> In order to reduce latency for end users when accessing the application we add database replicas. For example Read Replica can be in Oregon region.</li>
-    <li>Add resources to RDS (Scale up) to database instance. <h2><b>Reasons:</b></h2> Improve database performance and would be useful in case of huge traffic on the application.</li>
-</ul>
+[`rational.txt`](resources/estimated_increased.txt) 
 
 [`Increased_Cost_Estimate.csv`](resources/Increased_Cost_Estimate.csv) 
 </ul>
