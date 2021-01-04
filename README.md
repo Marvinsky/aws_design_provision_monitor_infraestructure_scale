@@ -46,9 +46,9 @@ The task carried out for this project should be carried out by a user logged in 
 
 <h4>How I reduced the estimate to $6,500?</h4>
 <ul>
-    <li>Change the instance type for ec2 from t2.xlarge to t2.large ($1,378.88 -> $701.44) <b>Reason</b>: The performance can be reduced. However, we still can scale if we want to.</li>
-    <li>Change model pricing from on-demand to reserved instances.<b>Reason</b>: Reserving instances for 1 year will reduce cost for the architecture. However, we lock the application platform to use the same infraestructure for one year. Nevertheless, more resources can be added.</li>
-    <li>Scale down RDS instance from: db.m5.4xlarge to db.m5.2xlarge. <b>Reason</b>: We will have performance issue in the database. But, it can be bearable.
+    <li>Change the instance type for ec2 from t2.xlarge to t2.large ($1,378.88 -> $701.44). <h2><b>Reasons:</b></h2> The performance can be reduced due to small resources. However, we still can scale if we want to.</li>
+    <li>Change model pricing from on-demand to reserved instances.<h2><b>Reasons:</b></h2> Reserving instances for 1 year will reduce cost for the architecture. However, we lock the application platform to use the same infraestructure for one year. Nevertheless, more resources can be added due to elasticity.</li>
+    <li>Scale down RDS instance from: db.m5.4xlarge to db.m5.2xlarge. <h2><b>Reasons:</b></h2> We will have performance issues in the database because reducing the computational capacity. But, it can be bearable.
 </ul>
 
 [`Reduced_Cost_Estimate.csv`](resources/Reduced_Cost_Estimate.csv) 
@@ -59,9 +59,10 @@ The task carried out for this project should be carried out by a user logged in 
 <h4>How I come up with an estimated cost of $20,000?</h4>
 
 <ul>
-    <li>Add more instances ec2 (Scale out) and load balancer. <b>Reason</b>: Provide high availability for the application. Even if Northern Virginia region is completely down, application will be up and running in Oregon Region. In addition, increase instance type capacities.</li>
-    <li>Add RDS database instance in Oregon Region. <b>Reason</b>: In order to reduce latency for end users accessing the application in other region. Read Replica can be in Oregon region.</li>
-    <li>Add resources to RDS (Scale up) to database instance. <b>Reason</b>: Improve database performance and would be useful in case of huge traffic on application.</li>
+    <li>Add more instances ec2 (Scale out) and load balancer. <h2><b>Reasons:</b></h2> Provide high availability for the application due to more computational capacity when changing for larger instance type. Even if Northern Virginia region is completely down, application will be up and running in Oregon Region.</li>
+    <li>Add RDS database instances in Oregon Region.
+    <h2><b>Reasons:</b></h2> In order to reduce latency for end users when accessing the application we add database replicas. For example Read Replica can be in Oregon region.</li>
+    <li>Add resources to RDS (Scale up) to database instance. <h2><b>Reasons:</b></h2> Improve database performance and would be useful in case of huge traffic on the application.</li>
 </ul>
 
 [`Increased_Cost_Estimate.csv`](resources/Increased_Cost_Estimate.csv) 
